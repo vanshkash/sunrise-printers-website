@@ -1,0 +1,91 @@
+export default function PastWorks() {
+  const works = [
+    {
+      img: "https://5.imimg.com/data5/HU/LH/MY-31242241/jk-tyre-distributor.jpg",
+      name: "JK Tyres",
+    },
+    {
+      img: "https://internal-assets.jswonemsme.com/ACC_Suraksha_Power_Cement_1ef73d69c7/ACC_Suraksha_Power_Cement_1ef73d69c7.jpeg",
+      name: "ACC Cement",
+    },
+    {
+      img: "https://content.jdmagicbox.com/comp/muzaffarnagar/v1/9999px131.x131.170602233036.h1v1/catalogue/delhi-public-school-muzaffarnagar-delhi-public-schools-1lhfqiwqza.jpg",
+      name: "DPS Hapur",
+    },
+    {
+      img: "https://img.freepik.com/free-photo/signboard-mockup_53876-13258.jpg",
+      name: "Urban Media",
+    },
+    {
+      img: "https://img.freepik.com/free-photo/banner-mockup_53876-13255.jpg",
+      name: "Eventify",
+    },
+    {
+      img: "https://img.freepik.com/free-photo/wedding-card-mockup_53876-11951.jpg",
+      name: "Elegant Weddings",
+    },
+  ];
+
+  return (
+    <section className="relative py-24 text-white overflow-hidden">
+      {/* Heading */}
+      <div className="text-center mb-14 px-6">
+        <h2 className="text-3xl md:text-4xl font-bold">
+          Trusted <span className="text-orange-500">By</span>
+        </h2>
+        <p className="mt-3 text-gray-400">
+          Companies and brands that rely on our printing & branding expertise
+        </p>
+      </div>
+
+      {/* Slider */}
+      <div className="overflow-hidden">
+        <div className="marquee-track flex gap-4 w-max">
+          {[...works, ...works].map((work, index) => (
+            <div
+              key={index}
+              className="
+                min-w-[220px] sm:min-w-[260px]
+                h-[190px] rounded-xl overflow-hidden
+                bg-white/5 backdrop-blur
+                border border-white/10
+                flex flex-col items-center justify-center
+              "
+            >
+              <img
+                src={work.img}
+                alt={work.name}
+                className="w-full h-[140px] object-cover"
+              />
+              <p className="mt-2 text-sm text-gray-300 font-medium">
+                {work.name}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* CSS */}
+      <style>{`
+        .marquee-track {
+          animation: scroll 18s linear infinite;
+        }
+
+        @keyframes scroll {
+          from {
+            transform: translateX(0);
+          }
+          to {
+            transform: translateX(-50%);
+          }
+        }
+
+        @media (hover: hover) {
+          .marquee-track:hover {
+            animation-play-state: paused;
+          }
+        }
+      `}</style>
+    </section>
+  );
+}
