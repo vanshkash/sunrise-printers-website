@@ -22,7 +22,7 @@ export default function Navbar() {
 
   return (
     <header className="fixed top-0 left-0 w-full bg-gray-800 shadow-md z-50">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
 
         {/* Logo */}
         <NavLink
@@ -42,33 +42,33 @@ export default function Navbar() {
           <NavLink to="/about" className={linkClass}>About Us</NavLink>
 
           {/* Services Dropdown */}
-<div className="relative group">
-  <button className="flex items-center gap-1 hover:text-orange-400">
-    Services <ChevronDown size={16} />
-  </button>
+          <div className="relative group">
+            <button className="flex items-center gap-1 hover:text-orange-400">
+              Services <ChevronDown size={16} />
+            </button>
 
-  <div
-    className="absolute top-full left-0 mt-3 w-64
+            <div
+              className="absolute top-full left-0 mt-3 w-64
                 backdrop-blur-xl
                border border-orange-400/60
                text-white rounded-xl shadow-xl
                opacity-0 invisible group-hover:opacity-100 group-hover:visible
                transition-all duration-300"
-  >
-    <ul className="py-3">
-      {servicesList.map((service, i) => (
-        <li key={i}>
-          <NavLink
-            to={`/services/${service.toLowerCase().replace(/\s+/g, "-")}`}
-            className="block px-5 py-2 hover:bg-orange-400/10 hover:text-orange-300 transition"
-          >
-            {service}
-          </NavLink>
-        </li>
-      ))}
-    </ul>
-  </div>
-</div>
+            >
+              <ul className="py-3">
+                {servicesList.map((service, i) => (
+                  <li key={i}>
+                    <NavLink
+                      to={`/services/${service.toLowerCase().replace(/\s+/g, "-")}`}
+                      className="block px-5 py-2 hover:bg-orange-400/10 hover:text-orange-300 transition"
+                    >
+                      {service}
+                    </NavLink>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
 
 
           <NavLink to="/gallery" className={linkClass}>Gallery</NavLink>
