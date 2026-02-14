@@ -1,24 +1,53 @@
+import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function Hero() {
+  const leftVariant = {
+    hidden: { opacity: 0, x: -60 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 1.4, ease: "easeOut" },
+    },
+  };
+
+  const slideRight = {
+    hidden: { opacity: 0, x: 80 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 1.6,
+        ease: "easeOut",
+      },
+    },
+  };
+
+
   return (
     <section className="relative pt-24 min-h-screen overflow-hidden flex items-center">
       <div className="relative max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center pb-6">
 
         {/* ================= LEFT CONTENT ================= */}
         <div>
-          <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight">
+          <motion.h1
+            variants={leftVariant}
+            initial="hidden"
+            animate="visible"
+            className="text-4xl md:text-5xl font-bold text-white leading-tight">
             Creative Printing & <br />
             <span className="text-orange-500">Marketing Solutions</span>
-          </h1>
+          </motion.h1>
 
           <p className="mt-4 text-gray-400 text-lg">
             Hoardings, Flex Banners, Business Cards, Glow Sign Boards &
             complete branding solutions for your business.
           </p>
 
-          <div className="mt-6 flex flex-wrap gap-4">
+          <motion.div variants={leftVariant}
+            initial="hidden"
+            animate="visible" className="mt-6 flex flex-wrap gap-4">
             <a
               href="https://wa.me/919568828814"
               target="_blank"
@@ -34,7 +63,7 @@ export default function Hero() {
             >
               Our Services
             </Link>
-          </div>
+          </motion.div>
 
           {/* Trust Badges */}
           <div className="mt-10 flex gap-10 text-sm text-gray-400">
@@ -54,7 +83,12 @@ export default function Hero() {
         </div>
 
         {/* ================= RIGHT IMAGE AREA ================= */}
-        <div className="relative">
+        <motion.div
+          variants={slideRight}
+          initial="hidden"
+          animate="visible"
+          className="relative"
+        >
 
           {/* MAIN IMAGE  */}
           <img
@@ -68,9 +102,9 @@ export default function Hero() {
           <img
             src="/images/HeroFloatingImages/VisitingCard.webp"
             alt="Visiting Card"
-  className="absolute -top-8 -left-8 w-28 rounded-md shadow-lg
+            className="absolute -top-8 -left-8 w-28 rounded-md shadow-lg
              float-slow z-30 hidden md:block"
-/>
+          />
           {/* Bill Book */}
           <img
             src="/images/HeroFloatingImages/Billbook.png"
@@ -106,7 +140,7 @@ export default function Hero() {
               Premium Quality Printing
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

@@ -15,7 +15,7 @@ import AboutUs from "./components/AboutUs";
 import Contact from "./components/Contact";
 import Services from "./components/Services";
 import Gallery from "./components/Gallery";
-import IdCardService from "./components/ServicePages/IdCardService";  
+import IdCardService from "./components/ServicePages/IdCardService";
 
 function App() {
   const location = useLocation();
@@ -30,10 +30,10 @@ function App() {
             path="/"
             element={
               <MainLayout>
-                  <PageTransition>
-                  <Home />
-              </PageTransition>
-                </MainLayout>
+                {/* <PageTransition> */}
+                <Home />
+                {/* </PageTransition> */}
+              </MainLayout>
             }
           />
 
@@ -58,16 +58,16 @@ function App() {
               </MainLayout>
             }
           />
-            <Route 
-            path="/services/id-cards" 
+          <Route
+            path="/services/id-cards"
             element={
               // <MainLayout>
-                <PageTransition>
-                  <IdCardService />
-                </PageTransition>
+              <PageTransition>
+                <IdCardService />
+              </PageTransition>
               // </MainLayout>
-              }
-               />
+            }
+          />
 
           <Route
             path="/gallery"

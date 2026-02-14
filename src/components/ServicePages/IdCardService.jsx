@@ -73,7 +73,6 @@ export default function IdCardService() {
             </span>
           </div>
 
-
           {/* Divider */}
           <div className="border-t border-white/20 my-6" />
 
@@ -141,9 +140,9 @@ export default function IdCardService() {
                 <h3 className="text-lg font-semibold text-orange-300">
                   {item.title}
                 </h3>
-                <p className="mt-2 text-sm text-gray-400">
+                {/* <p className="mt-2 text-sm text-gray-400">
                   Available in bulk with custom design & lamination.
-                </p>
+                </p> */}
               </div>
             </div>
           ))}

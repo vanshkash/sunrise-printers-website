@@ -131,7 +131,7 @@ export default function Services() {
           {item.title}
         </h3>
 
-        <p className="mt-1 text-gray-400 text-sm leading-snug">
+        <p className="mt-1 text-gray-400 text-sm leading-snug hidden md:block">
           {item.desc}
         </p>
 
