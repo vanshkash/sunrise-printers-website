@@ -1,2 +1,7 @@
-/sitemap.xml   /sitemap.xml   200
-/*             /index.html    200
+http://sunriseprinters.in/* https://sunriseprinters.in/:splat 301!
+http://www.sunriseprinters.in/* https://sunriseprinters.in/:splat 301!
+https://www.sunriseprinters.in/* https://sunriseprinters.in/:splat 301!
+
+/sitemap.xml /sitemap.xml 200
+
+/* /index.html 200
