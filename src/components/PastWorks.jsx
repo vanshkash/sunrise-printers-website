@@ -1,29 +1,38 @@
 export default function PastWorks() {
   const works = [
     {
-      img: "https://5.imimg.com/data5/HU/LH/MY-31242241/jk-tyre-distributor.jpg",
+      img: "/images/Pastworks/jk.webp",
       name: "JK Tyres",
     },
     {
-      img: "https://internal-assets.jswonemsme.com/ACC_Suraksha_Power_Cement_1ef73d69c7/ACC_Suraksha_Power_Cement_1ef73d69c7.jpeg",
-      name: "ACC Cement",
+      img: "/images/Pastworks/tata.webp",
+      name: "Tata Motors",
     },
     {
-      img: "https://content.jdmagicbox.com/comp/muzaffarnagar/v1/9999px131.x131.170602233036.h1v1/catalogue/delhi-public-school-muzaffarnagar-delhi-public-schools-1lhfqiwqza.jpg",
+      img: "/images/Pastworks/dps.avif",
       name: "DPS Hapur",
     },
     {
-      img: "https://img.freepik.com/free-photo/signboard-mockup_53876-13258.jpg",
-      name: "Urban Media",
+      img: "/images/Pastworks/ambuja.avif",
+      name: "ACC Cement",
     },
     {
-      img: "https://img.freepik.com/free-photo/banner-mockup_53876-13255.jpg",
-      name: "Eventify",
+      img: "/images/Pastworks/dewan.webp",
+      name: "Dewan Public School",
     },
     {
-      img: "https://img.freepik.com/free-photo/wedding-card-mockup_53876-11951.jpg",
-      name: "Elegant Weddings",
+      img: "/images/Pastworks/gd.webp",
+      name: "GD Goenka School",
     },
+    {
+      img: "/images/Pastworks/kfc.webp",
+      name: "KFC",
+    },
+    {
+      img: "/images/Pastworks/ramah.webp",
+      name: "Rama Hospital",
+    },
+
   ];
 
   return (
@@ -54,7 +63,9 @@ export default function PastWorks() {
             >
               <img
                 src={work.img}
-                alt={work.name}
+                alt={`${work.name} Branding Work`}
+                loading="lazy"
+                decoding="async"
                 className="w-full h-[140px] object-cover"
               />
               <p className="mt-2 text-sm text-gray-300 font-medium">

@@ -2,20 +2,32 @@ import { useState, useEffect } from "react";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 
 const galleryData = [
-  { id: 1, category: "Flexes", image: "https://img500.exportersindia.com/product_images/bc-500/dir_160/4772934/flex-board-printing-services-1526981368-3889866.jpeg" },
-  { id: 2, category: "Cards", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0jnqqowr6mbxYm7hTD9GhBrnyP08Y72FmAA&s" },
-  { id: 3, category: "Boards", image: "https://img500.exportersindia.com/product_images/bc-500/dir_160/4772934/flex-board-printing-services-1526981368-3889866.jpeg" },
-  { id: 4, category: "Flexes", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCUp-D4Axjsd19-a8uEi9sR_O6HJ02EDL1Yg&s" },
-  { id: 5, category: "Cards", image: "https://cdn.pixabay.com/photo/2024/09/29/11/27/vertical-billboard-9083310_1280.jpg" },
-  { id: 6, category: "Boards", image: "https://img500.exportersindia.com/product_images/bc-500/dir_160/4772934/flex-board-printing-services-1526981368-3889866.jpeg" },
-  { id: 7, category: "Flexes", image: "https://img500.exportersindia.com/product_images/bc-500/dir_160/4772934/flex-board-printing-services-1526981368-3889866.jpeg" },
-  { id: 8, category: "Cards", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0jnqqowr6mbxYm7hTD9GhBrnyP08Y72FmAA&s" },
-  { id: 9, category: "Boards", image: "https://img500.exportersindia.com/product_images/bc-500/dir_160/4772934/flex-board-printing-services-1526981368-3889866.jpeg" },
-  { id: 10, category: "Flexes", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCUp-D4Axjsd19-a8uEi9sR_O6HJ02EDL1Yg&s" },
-  { id: 11, category: "Cards", image: "https://cdn.pixabay.com/photo/2024/09/29/11/27/vertical-billboard-9083310_1280.jpg" },
-  { id: 12, category: "Boards", image: "https://img500.exportersindia.com/product_images/bc-500/dir_160/4772934/flex-board-printing-services-1526981368-3889866.jpeg" },
-  { id: 13, category: "Cards", image: "https://cdn.pixabay.com/photo/2024/09/29/11/27/vertical-billboard-9083310_1280.jpg" },
-  { id: 14, category: "Boards", image: "https://img500.exportersindia.com/product_images/bc-500/dir_160/4772934/flex-board-printing-services-1526981368-3889866.jpeg" },
+  { id: 1, category: "Boards", image: "/images/gallery/agri.webp" },
+  { id: 2, category: "Cards", image: "/images/SRHome.avif" },
+  { id: 3, category: "Boards", image: "/images/gallery/gia.webp" },
+  { id: 4, category: "Flexes", image: "/images/gallery/durga.webp" },
+  { id: 5, category: "Cards", image: "/images/gallery/gd.webp" },
+  { id: 6, category: "Boards", image: "/images/gallery/hero.webp" },
+  { id: 7, category: "Flexes", image: "/images/gallery/hmschool.webp" },
+  { id: 8, category: "Boards", image: "/images/gallery/iti.webp" },
+  { id: 9, category: "Boards", image: "/images/gallery/jpschool.webp" },
+  { id: 10, category: "Flexes", image: "/images/gallery/jpsr.webp" },
+  { id: 11, category: "Cards", image: "/images/gallery/sps.webp" },
+  { id: 12, category: "Boards", image: "/images/gallery/sr.webp" },
+  { id: 13, category: "Boards", image: "/images/gallery/str.webp" },
+  { id: 14, category: "Flexes", image: "/images/gallery/svg.webp" },
+  { id: 15, category: "Flexes", image: "/images/gallery/vidhyapeth.webp" },
+  { id: 16, category: "Boards", image: "/images/gallery/sss.webp" },
+  { id: 17, category: "Flexes", image: "/images/gallery/rtw.webp" },
+  { id: 18, category: "Flexes", image: "/images/gallery/logo.webp" },
+  { id: 19, category: "Boards", image: "/images/gallery/everest.webp" },
+  { id: 20, category: "Flexes", image: "/images/gallery/vidya.webp" },
+  { id: 21, category: "Flexes", image: "/images/gallery/medi.webp" },
+  { id: 22, category: "Flexes", image: "/images/gallery/letter.webp" },
+  { id: 23, category: "Boards", image: "/images/gallery/globe.webp" },
+  { id: 24, category: "Flexes", image: "/images/gallery/balgyan.webp" },
+  { id: 25, category: "Flexes", image: "/images/gallery/durga.webp" },
+
 
 ];
 
@@ -87,8 +99,9 @@ export default function Gallery() {
           >
             <img
               src={item.image}
-              alt=""
+              alt={`${item.category} Printing Work`}
               loading="lazy"
+              decoding="async"
               className="w-full h-36 object-cover hover:scale-105 transition"
             />
           </div>
@@ -127,7 +140,7 @@ export default function Gallery() {
           {/* IMAGE */}
           <img
             src={filtered[activeIndex].image}
-            alt=""
+            alt="Printing Work"
             onClick={(e) => e.stopPropagation()}
             className="relative z-[110] max-h-[85vh] max-w-[90vw] object-contain"
           />

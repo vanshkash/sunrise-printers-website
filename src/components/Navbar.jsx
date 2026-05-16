@@ -4,11 +4,13 @@ import { NavLink } from "react-router-dom";
 
 const servicesList = [
   "ID Cards",
-  "Flex Banners",
+  "Flex Boards",
   "Visiting Cards",
   "Sign Boards",
-  "Glowing Sign Boards",
-  "Wedding Cards",
+  "Bill Books",
+  "Calendars",
+  "Labels Stickers",
+  "Posters"
 ];
 
 export default function Navbar() {

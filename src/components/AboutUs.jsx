@@ -61,41 +61,33 @@ export default function AboutUs() {
             Our <span className="text-orange-500">Team</span>
           </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8">
 
             {/* Team Member 1 */}
             <div className="bg-white/5 border border-white/10 rounded-2xl p-6 text-center hover:bg-white/10 transition">
               <img
                 src="/images/AboutUsImage.webp"
                 alt="Team Member"
+                loading="lazy"
+  decoding="async"
                 className="w-28 h-28 mx-auto rounded-full object-cover mb-4"
               />
               <h4 className="font-semibold text-lg">Gautam Kumar</h4>
-              <p className="text-gray-400 text-sm">Founder and CEO</p>
+              <p className="text-gray-400 text-sm">Founder</p>
             </div>
 
             {/* Team Member 2 */}
             <div className="bg-white/5 border border-white/10 rounded-2xl p-6 text-center hover:bg-white/10 transition">
               <img
-                src="/images/AboutUsImage.webp"
+                src="/images/riteshkumar.webp"
                 alt="Team Member"
+                loading="lazy"
+                decoding="async"
                 className="w-28 h-28 mx-auto rounded-full object-cover mb-4"
               />
-              <h4 className="font-semibold text-lg">Amit Verma</h4>
-              <p className="text-gray-400 text-sm">Design & Layout</p>
+              <h4 className="font-semibold text-lg">Ritesh Kumar</h4>
+              <p className="text-gray-400 text-sm">CEO</p>
             </div>
-
-            {/* Team Member 3 */}
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-6 text-center hover:bg-white/10 transition">
-              <img
-                src="/images/AboutUsImage.webp"
-                alt="Team Member"
-                className="w-28 h-28 mx-auto rounded-full object-cover mb-4"
-              />
-              <h4 className="font-semibold text-lg">Sandeep Kumar</h4>
-              <p className="text-gray-400 text-sm">Design & Layout</p>
-            </div>
-
           </div>
         </div>
 

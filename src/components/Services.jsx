@@ -3,67 +3,78 @@ import { Link } from "react-router-dom";
 
 const services = [
   {
-  title: "ID Cards",
-  desc: "High-quality custom ID cards for schools, offices, and organizations with durable finishing.",
-  image: "https://5.imimg.com/data5/RW/JW/MY-3819677/identity-cards-500x500.jpg",
-  link: "/services/id-cards",
+    title: "ID Cards",
+    desc: "High-quality custom ID cards for schools, offices, and organizations with durable finishing.",
+    image: "/services/idcard.avif",
+    link: "/services/id-cards",
   },
   {
-    
+
     title: "Flex Board",
     desc: "Durable flex board for indoor & outdoor advertising.",
-    image: "https://cpimg.tistatic.com/8534048/b/1/ms-frame-flex-board.jpg",
+    image: "/services/flex-boards.avif",
+    link: "/services/flex-boards",
   },
   {
     title: "Visiting Cards",
     desc: "Professional visiting cards that create a lasting impression.",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_xfauecWKaYJ2ieUbWBvN9cfnyYO6gKlCeQ&s",
+    image: "/services/visiting-cards.avif",
+    link: "/services/visiting-cards",
   },
   {
     title: "Sign Boards",
     desc: "Custom sign boards for shops, offices & branding.",
-    image: "https://images.jdmagicbox.com/quickquotes/images_main/vinyl-glow-sign-board-8-x-4-feet-2221313944-4z80k661.jpg",
+    image: "/services/sign-boards.avif",
+    link: "/services/sign-boards",
   },
   {
     title: "Posters",
     desc: "High quality posters with vibrant colors and premium finish.",
-    image: "https://www.creativefabrica.com/wp-content/uploads/2022/01/06/Corporate-Business-Flyer-Poster-Template-Graphics-23050415-2-580x387.jpg",
+    image: "/services/posters.avif",
+    link: "/services/posters",
   },
- {
-  title: "Bill Books",
-  desc: "Customized bill books and invoice pads with clear layouts, numbering, and high-quality paper.",
-  image: "https://printingsolutions.in/wp-content/uploads/2022/07/Bill-Book.jpg",
-},
   {
-  title: "Glow Sign Boards",
-  desc: "Attractive LED glow sign boards for shops and businesses with bright lighting and durable materials.",
-  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpwKDRnme_IY-jl03KDQzFPb68wFpH4wqctw&s",
-},
-{
-  title: "Calendars",
-  desc: "Customized wall and desk calendars with premium printing, perfect for branding and promotions.",
-  image: "https://printmagicprint.com/wp-content/uploads/2020/08/A3-Size-Poster-Calendar.jpg",
-},
-{
-  title: "Labels & Stickers",
-  desc: "Custom printed labels and stickers for packaging, branding, and product identification.",
-  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjaq9kGVRMD3E2Ds7hOc6Pjd5nEDVMk8UB1A&s",
-},
-{
-  title: "Pamphlets & Flyers",
-  desc: "High-quality pamphlet and flyer printing for promotions, events, and business marketing.",
-  image: "https://www.shutterstock.com/image-vector/minimal-trifold-brochure-template-business-260nw-2316834127.jpg",
-},
-{
-  title: "School Stationery",
-  desc: "Printed school stationery including notebooks, report cards, certificates, and ID cards.",
-  image: "https://c8.alamy.com/comp/2JDC9D3/top-view-of-notebooksschool-supplies-and-spiral-notepad-with-space-for-text-on-blued-table-back-to-school-concept-2JDC9D3.jpg",
-},
-{
-  title: "Office Stationery",
-  desc: "Professional office stationery printing such as letterheads, envelopes, files, and visiting cards.",
-  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSxgY2P6SZys66HxQU4TCoGAuTJz_ZEfcThQ&s",
-}
+    title: "Bill Books",
+    desc: "Customized bill books and invoice pads with clear layouts, numbering, and high-quality paper.",
+    image: "/services/bill-books.avif",
+    link: "/services/bill-books",
+  },
+  {
+    title: "Glow Sign Boards",
+    desc: "Attractive LED glow sign boards for shops and businesses with bright lighting and durable materials.",
+    image: "/services/glow-sign-boards.avif",
+    link: "/services/glow-sign-boards",
+  },
+  {
+    title: "Calendars",
+    desc: "Customized wall and desk calendars with premium printing, perfect for branding and promotions.",
+    image: "/services/calendars.avif",
+    link: "/services/calendars",
+  },
+  {
+    title: "Labels & Stickers",
+    desc: "Custom printed labels and stickers for packaging, branding, and product identification.",
+    image: "/services/labels-stickers.avif",
+    link: "/services/labels-stickers",
+  },
+  {
+    title: "Pamphlets & Flyers",
+    desc: "High-quality pamphlet and flyer printing for promotions, events, and business marketing.",
+    image: "/services/pamphlets-flyers.avif",
+    link: "/services/pamphlets-flyers",
+  },
+  {
+    title: "School Stationery",
+    desc: "Printed school stationery including notebooks, report cards, certificates, and ID cards.",
+    image: "/services/school-stationery.avif",
+    link: "/services/school-stationery",
+  },
+  {
+    title: "Office Stationery",
+    desc: "Professional office stationery printing such as letterheads, envelopes, files, and visiting cards.",
+    image: "/services/office-stationery.avif",
+    link: "/services/office-stationery",
+  }
 
 
 
@@ -91,60 +102,62 @@ export default function Services() {
 
       {/* Services Grid */}
       <div
-  className="
+        className="
     relative z-10
     max-w-7xl mx-auto px-4 sm:px-6
     grid gap-4
     grid-cols-2
-    md:grid-cols-3
-    lg:grid-cols-4
+    md:grid-cols-4
+    lg:grid-cols-5
   "
->
+      >
 
         {services.map((item, index) => {
-  const CardWrapper = item.link ? Link : "div";
+          const CardWrapper = item.link ? Link : "div";
 
-  return (
-    <CardWrapper
-      key={index}
-      to={item.link}
-      className="
+          return (
+            <CardWrapper
+              key={index}
+              to={item.link}
+              className="
         bg-white/5 border border-white/10
         rounded-md overflow-hidden
         hover:border-orange-500/40
         transition
         block
       "
-    >
-      {/* Image */}
-      <div className="h-40 overflow-hidden">
-        <img
-          src={item.image}
-          alt={item.title}
-          className="w-full h-full object-cover hover:scale-105 transition"
-        />
-      </div>
+            >
+              {/* Image */}
+              <div className="h-28 sm:h-32 lg:h-40 overflow-hidden">
+                <img
+                  src={item.image}
+                  alt={`${item.title} Printing Service`}
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full h-full object-cover hover:scale-105 transition"
+                />
+              </div>
 
-      {/* Content */}
-      <div className="p-4">
-        <h3 className="text-lg font-semibold leading-snug">
-          {item.title}
-        </h3>
+              {/* Content */}
+              <div className="p-4">
+                <h3 className="text-lg font-semibold leading-snug">
+                  {item.title}
+                </h3>
 
-        <p className="mt-1 text-gray-400 text-sm leading-snug hidden md:block">
-          {item.desc}
-        </p>
+                <p className="mt-1 text-gray-400 text-sm leading-snug hidden md:block">
+                  {item.desc}
+                </p>
 
-        {item.link && (
-          <span className="mt-3 inline-flex items-center gap-1 text-sm text-orange-400 hover:text-orange-300 transition">
-            View Details
-            <ArrowRight size={14} />
-          </span>
-        )}
-      </div>
-    </CardWrapper>
-  );
-})}
+                {item.link && (
+                  <span className="mt-3 inline-flex items-center gap-1 text-sm text-orange-400 hover:text-orange-300 transition">
+                    View Details
+                    <ArrowRight size={14} />
+                  </span>
+                )}
+              </div>
+            </CardWrapper>
+          );
+        })}
 
       </div>
     </section>

@@ -92,7 +92,7 @@ export default function Hero() {
 
           {/* MAIN IMAGE  */}
           <img
-            src="/images/SRHome.jpg"
+            src="/images/SRHome.avif"
             alt="Printing Services"
             className="rounded-2xl shadow-xl relative z-10"
           />
@@ -100,14 +100,14 @@ export default function Hero() {
           {/* ===== FLOATING IMAGES AROUND MAIN IMAGE ===== */}
           {/* Visiting Card */}
           <img
-            src="/images/HeroFloatingImages/VisitingCard.webp"
+            src="/images/HeroFloatingImages/VisitingCard.avif"
             alt="Visiting Card"
             className="absolute -top-8 -left-8 w-28 rounded-md shadow-lg
              float-slow z-30 hidden md:block"
           />
           {/* Bill Book */}
           <img
-            src="/images/HeroFloatingImages/Billbook.png"
+            src="/images/HeroFloatingImages/Billbook.avif"
             alt="Bill Book Printing"
             className="absolute -top-6 -right-6 w-44 rounded-md shadow-lg
                        float-slow z-30 hidden md:block"
@@ -115,7 +115,7 @@ export default function Hero() {
 
           {/* ID Card */}
           <img
-            src="/images/HeroFloatingImages/IdCard.png"
+            src="/images/HeroFloatingImages/IdCard.avif"
             alt="Id Card Printing"
             className="absolute top-1/2 -left-12 w-32 rounded-md shadow-lg
                        float-medium z-30 hidden md:block"
@@ -123,7 +123,7 @@ export default function Hero() {
 
           {/* Signboard */}
           <img
-            src="/images/HeroFloatingImages/LedSignBoard.png"
+            src="/images/HeroFloatingImages/LedSignBoard.avif"
             alt="Signboard Printing"
             className="absolute -bottom-10 right-12 w-36 rounded-md shadow-lg
                        float-fast z-30 hidden md:block"

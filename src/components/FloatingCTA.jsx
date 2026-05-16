@@ -10,7 +10,7 @@ export default function FloatingCTA() {
         className="group flex items-center gap-2  p-2 rounded-full shadow-lg hover:scale-110 transition-transform"
       >
         <img
-          src="/images/WhatsApp.webp"
+          src="/images/WhatsApp.avif"
           alt="WhatsApp"
           className="w-12 h-12"
         />
@@ -23,7 +23,7 @@ export default function FloatingCTA() {
         className="group flex items-center gap-3  p-3 rounded-full shadow-lg "
       >
         <img
-          src="/images/CallButton.gif"
+          src="/images/CallButton.avif"
           alt="Call"
           className="w-12 h-12"
         />
