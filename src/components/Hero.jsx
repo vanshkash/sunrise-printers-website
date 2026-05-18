@@ -26,7 +26,7 @@ export default function Hero() {
 
 
   return (
-    <section className="relative pt-24 min-h-screen overflow-hidden flex items-center">
+    <section className="relative pt-14 min-h-screen overflow-hidden flex items-center">
       <div className="relative max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center pb-6">
 
         {/* ================= LEFT CONTENT ================= */}
@@ -37,7 +37,7 @@ export default function Hero() {
             animate="visible"
             className="text-4xl md:text-5xl font-bold text-white leading-tight">
             Creative Printing & <br />
-            <span className="text-orange-500">Marketing Solutions</span>
+            <span className="text-[2.2rem] text-orange-500">Marketing Solutions</span>
           </motion.h1>
 
           <p className="mt-4 text-gray-400 text-lg">
@@ -129,7 +129,7 @@ export default function Hero() {
                        float-fast z-30 hidden md:block"
           />
 
-          <div className="absolute -bottom-6 -left-6 z-20
+          <div className="absolute -bottom-6 -left-4 z-20
                           bg-gray-900/80 backdrop-blur-xl
                           border border-white/10 p-4
                           rounded-xl shadow-lg">

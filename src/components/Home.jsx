@@ -43,13 +43,13 @@ export default function Home() {
     <>
       <Helmet>
         <title>
-          Sunrise Printers | Flex Printing & Sign Boards in Hapur
-        </title>
+  Sunrise Printers | Best Printing Services in Hapur & NCR
+</title>
 
         <meta
-          name="description"
-          content="Sunrise Printers provides flex printing, wedding cards, sign boards, visiting cards and custom printing services in Hapur and NCR."
-        />
+  name="description"
+  content="Sunrise Printers is a trusted manufacturer of sign boards and provider of professional printing services in Hapur including flex printing, visiting cards, banners, wedding cards and custom branding solutions."
+/>
 
         <meta
           name="keywords"
@@ -65,7 +65,10 @@ export default function Home() {
 
         <meta property="og:type" content="website" />
 
-        <meta property="og:image" content="/images/SRHome.webp" />
+        <meta
+          property="og:image"
+          content="https://sunriseprinters.in/images/SRHome.avif"
+        />
 
         <meta property="og:url" content="https://sunriseprinters.in/" />
 
@@ -74,8 +77,29 @@ export default function Home() {
         <meta name="author" content="Sunrise Printers" />
 
         <meta name="robots" content="index, follow" />
+
+        <meta
+          property="og:site_name"
+          content="Sunrise Printers"
+        />
+
+        <script type="application/ld+json">
+          {`
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Sunrise Printers",
+  "url": "https://sunriseprinters.in",
+  "logo": "https://sunriseprinters.in/TitleLogo.webp",
+  "sameAs": [
+    "https://www.instagram.com/",
+    "https://www.facebook.com/"
+  ]
+}
+`}
+        </script>
       </Helmet>
-      
+
       <Hero />
 
       <div ref={servicesRef}>
@@ -90,7 +114,7 @@ export default function Home() {
         )}
       </div>
 
-<div ref={pastWorksRef}>
+      <div ref={pastWorksRef}>
         {pastWorksVisible && (
           <Suspense fallback={
             <div className="py-20 text-center text-gray-400">

@@ -47,7 +47,7 @@ export default function OfficeStationeryService() {
 
     <meta
       property="og:image"
-      content="https://sunriseprinters.in/services/office-stationery.webp"
+      content="https://sunriseprinters.in/services/office-stationery.avif"
     />
 
     <meta

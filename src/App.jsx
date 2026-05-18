@@ -10,13 +10,13 @@ import MainLayout from "./layouts/MainLayout";
 import ScrollToTop from "./components/ScrollToTop";
 import Home from "./components/Home";
 // import AboutUs from "./components/AboutUs";
-const AboutUs = lazy(() => import("./components/AboutUs"));
+const AboutPage = lazy(() => import("./components/pages/AboutPage"));
 // import ContactPage from "./components/pages/ContactPage";
 const ContactPage = lazy(() => import("./components/pages/ContactPage"));
 // import Services from "./components/Services";
-const Services = lazy(() => import("./components/Services"));
+const ServicesPage = lazy(() => import("./components/pages/ServicesPage"));
 // import Gallery from "./components/Gallery";
-const Gallery = lazy(() => import("./components/Gallery"));
+const GalleryPage = lazy(() => import("./components/pages/GalleryPage"));
 // import IdCardService from "./components/ServicePages/IdCardService";
 const IdCardService = lazy(() =>
   import("./components/ServicePages/IdCardService")
@@ -92,7 +92,7 @@ function App() {
                 <Suspense fallback={<div className="min-h-screen flex items-center justify-center text-black">Loading...</div>}>
               <MainLayout>
                 <PageTransition>
-                  <AboutUs />
+                  <AboutPage />
                 </PageTransition>
               </MainLayout>
               </Suspense>
@@ -105,7 +105,7 @@ function App() {
               <Suspense fallback={<div className="min-h-screen flex items-center justify-center text-black">Loading...</div>}>
               <MainLayout>
                 <PageTransition>
-                  <Services />
+                  <ServicesPage />
                 </PageTransition>
               </MainLayout>
               </Suspense>
@@ -244,7 +244,7 @@ function App() {
     <Suspense fallback={<div className="min-h-screen flex items-center justify-center text-black">Loading...</div>}>
     <MainLayout>
       <PageTransition>
-        <Gallery />
+        <GalleryPage />
       </PageTransition>
     </MainLayout>
     </Suspense>

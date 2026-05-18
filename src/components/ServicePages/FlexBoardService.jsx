@@ -67,7 +67,7 @@ export default function FlexBoardService() {
 
         <meta
           property="og:image"
-          content="https://sunriseprinters.in/services/flex-boards.webp"
+          content="https://sunriseprinters.in/services/flex-boards.avif"
         />
 
         <meta

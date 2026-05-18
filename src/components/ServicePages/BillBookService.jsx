@@ -65,7 +65,7 @@ export default function BillBookService() {
 
     <meta
       property="og:image"
-      content="https://sunriseprinters.in/services/bill-books.webp"
+      content="https://sunriseprinters.in/services/bill-books.avif"
     />
 
     <meta

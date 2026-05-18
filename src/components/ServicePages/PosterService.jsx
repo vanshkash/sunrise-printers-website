@@ -66,7 +66,7 @@ export default function PosterService() {
 
         <meta
           property="og:image"
-          content="https://sunriseprinters.in/services/posters.webp"
+          content="https://sunriseprinters.in/services/posters.avif"
         />
 
         <meta

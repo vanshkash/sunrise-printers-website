@@ -47,7 +47,7 @@ export default function PamphletsFlyersService() {
 
     <meta
       property="og:image"
-      content="https://sunriseprinters.in/services/pamphlets-flyers.webp"
+      content="https://sunriseprinters.in/services/pamphlets-flyers.avif"
     />
 
     <meta

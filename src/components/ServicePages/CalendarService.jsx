@@ -47,7 +47,7 @@ export default function CalendarService() {
 
     <meta
       property="og:image"
-      content="https://sunriseprinters.in/services/calendars.webp"
+      content="https://sunriseprinters.in/services/calendars.avif"
     />
 
     <meta

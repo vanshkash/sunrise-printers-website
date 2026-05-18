@@ -113,6 +113,17 @@ export default function Footer() {
             {/* Bottom Bar */}
             <div className="border-t border-white/10 mt-12 py-4 text-center text-sm text-gray-500">
                 © {new Date().getFullYear()} Sunrise Printers. All rights reserved.
+                <div className="mt-2 text-xs text-gray-600">
+  Designed & Developed by{" "}
+  <a
+    href="https://vanshkash.github.io/Portfolio-Website/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-orange-400 hover:text-orange-300 transition"
+  >
+    Vansh Kashyap
+  </a>
+</div>
             </div>
         </footer>
     );

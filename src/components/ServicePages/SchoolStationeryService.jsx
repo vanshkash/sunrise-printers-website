@@ -47,7 +47,7 @@ export default function SchoolStationeryService() {
 
     <meta
       property="og:image"
-      content="https://sunriseprinters.in/services/school-stationery.webp"
+      content="https://sunriseprinters.in/services/school-stationery.avif"
     />
 
     <meta
